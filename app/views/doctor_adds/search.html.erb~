@@ -1,0 +1,5 @@
+<h1>جستجوی دکتر </h1>
+
+<%= render 'form_search' %>
+
+<%= link_to 'Back', doctor_adds_path %>

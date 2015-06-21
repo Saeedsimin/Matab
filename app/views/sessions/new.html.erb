@@ -1,0 +1,32 @@
+<% provide(:title, "ورود") %>
+<section id="my_section">
+	<div class="blank_space">here is blank</div>
+
+	<div id="login_holder">
+		<%= form_for(:session, url: login_path) do |f| %>
+			<div class="txtBox_holder">
+	      			<%= f.email_field :username, class: 'txtBox', placeholder:"نام کاربری: user@example.com " %>
+			</div>
+
+	      		
+			<div class="txtBox_holder">
+				<%= f.password_field :password, class: 'txtBox', placeholder:"کلمه عبور" %>
+			</div>
+
+			<div id="btn_holder">
+				<%= f.submit "ورود", id: "btn_login" %>
+			</div>
+
+
+   		<% end %>
+		<div>
+    			<p>رمز خود را فراموش کرده اید؟ <%= link_to "	بازیابی کلمه عبور", home_path %></p>
+		</div>
+
+	</div>
+
+	<div class="blank_space">here is blank</div>
+    
+</section>
+
+

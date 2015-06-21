@@ -1,0 +1,110 @@
+// Place all the styles related to the Users controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.btn_signup{
+  width:200px;
+  height:35px;
+  font-family:"tahoma";
+  font-size:14pt;
+  border-radius:10px 10px 10px 10px/10px 10px 10px 10px;
+  background:linear-gradient(#248EA3,#AADAE3); 
+  font-weight:bold;
+  transition:0.5s;
+  margin-top:20px;
+}
+
+
+
+.btn_signup:hover{
+  cursor:pointer;
+  background:linear-gradient(#AADAE3,#248EA3); 
+  transition:0.5s;
+}
+
+
+.signup_txtBox_holder{
+  float:right;
+  width:50%;
+
+
+}
+
+
+.blank_space1{
+  float:right;
+  width:10%;
+  color:#F0F8FA;
+}
+
+#signup_holder{
+  float:right;
+  margin-top:20px;
+  padding-top:10px;
+  padding-bottom:10px;
+  padding-right:30px;
+  padding-left:30px;
+  width:80%;
+  height:auto;
+  background-color:#14B2DE;
+  border-radius:10px 10px 10px 10px/10px 10px 10px 10px;
+  
+}
+
+
+.pic_holder{
+  
+  margin-top:20px;
+  float:right;
+  margin-right:20px;
+  width:220px;
+}
+
+#info_part{
+  margin-top:20px;
+  float:right;
+  margin-right:30px;
+  width:500px;
+  font-size:14pt;
+}
+
+p{
+  font-size:14pt;
+}
+
+.info_sub_part{
+  margin-right:20px;
+  float:right;
+  font-size:14pt;
+}
+
+.info{
+  font-family:"tahoma";
+  font-size:14pt;
+
+}
+
+
+#show_section{
+  width:100%;
+  height:auto;
+  background-color:#F0F8FA;
+  float:right;
+  border-radius:10px 10px 10px 10px/10px 10px 10px 10px;
+  margin-bottom:20px;
+  padding-bottom:10px;
+}
+
+.txtBox_title{
+  width:30px;
+  float:right;
+  margin-top:10px;
+  margin-right:70px;
+}
+
+
+.actions{
+  
+
+}
+

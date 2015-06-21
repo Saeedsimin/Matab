@@ -1,0 +1,90 @@
+<% provide(:title, "ویرایش حساب کاربری") %>
+<section id="my_section">
+	<div class="blank_space1">here is blank</div>
+		<div id="signup_holder">
+			<%= form_for(@user) do |f| %>
+			  <% if @user.errors.any? %>
+			    <div id="error_explanation">
+			      <h2><%= pluralize(@user.errors.count, "error") %> prohibited this user from being saved:</h2>
+
+			      <ul>
+			      <% @user.errors.full_messages.each do |message| %>
+				<li><%= message %></li>
+			      <% end %>
+			      </ul>
+			    </div>
+			  <% end %>
+			  <div class="signup_txtBox_holder">
+				  <div class="field">
+					<div class="txtBox_title">
+					نام کاربری
+				        </div>
+				<%= f.email_field :username, placeholder:"Username: user@example.com", class: 'txtBox' %>
+				  </div>
+				  <div class="field">
+						<div class="txtBox_title">
+					کلمه عبور
+				   		</div>
+					 <%= f.password_field :password, placeholder:"Password", class: 'txtBox' %>
+				  </div>
+				  <div class="field">
+						<div class="txtBox_title">
+					نام
+				   		</div>
+					 <%= f.text_field :name, placeholder:"Name", class: 'txtBox' %>
+				  </div>
+				  <div class="field">
+						<div class="txtBox_title">
+					نام خانوادگی
+				    		</div>
+					<%= f.text_field :family, placeholder:"Family name", class: 'txtBox' %>
+				  </div>
+				  
+
+			  </div>
+
+			  <div class="signup_txtBox_holder">
+				  <div class="field">
+					<div class="txtBox_title">
+				جنسیت
+				   	</div>
+					 <%= f.text_field :gender, placeholder:"Gender: male/female", class: 'txtBox' %>
+				  </div>
+				  <div class="field">
+					<div class="txtBox_title">
+				شماره تماس
+				   	</div>
+					 <%= f.text_field :phone, placeholder:"Phone number: 09XXXXXXXXX", class: 'txtBox' %>
+				  </div>
+				  <div class="field">
+					<div class="txtBox_title">
+				شماره بیمه
+				    	</div>
+					<%= f.text_field :insuranceNumber, placeholder:"Insurance Number" , class: 'txtBox'%>
+				  </div>
+				  <div class="field">
+					<div class="txtBox_title">
+				گروه خونی
+				    	</div>
+					<%= f.text_field :bloodType, placeholder:"Blood group: A+", class: 'txtBox' %>
+				  </div>
+				  <div class="field">
+					<div class="txtBox_title">
+				سوابق بیماری
+				    	</div>
+					<%= f.text_field :records, placeholder:"Disease history", class: 'txtBox' %>
+				  </div>
+
+				  </div>
+
+				  <div class="actions">
+				    <%= f.submit "ایجاد تغییر", class:"btn_signup" %>
+				  </div>
+			</div>
+			<% end %>
+		</div>
+	<div class="blank_space1">here is blank</div>
+
+</section>
+
+

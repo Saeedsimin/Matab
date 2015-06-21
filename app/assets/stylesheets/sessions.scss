@@ -1,0 +1,88 @@
+// Place all the styles related to the Sessions controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+#my_section{
+  width:100%;
+  height:auto;
+  background-color:#F0F8FA;
+  float:right;
+  border-radius:10px 10px 10px 10px/10px 10px 10px 10px;
+  margin-bottom:20px;
+  padding-bottom:10px;
+  text-align:center;
+}
+
+.blank_space{
+  float:right;
+  width:33.33%;
+  color:#F0F8FA;
+}
+
+#login_holder{
+  float:right;
+  margin-top:20px;
+  padding-top:10px;
+  padding-bottom:10px;
+  padding-right:30px;
+  padding-left:30px;
+  width:33.33%;
+  height:auto;
+  background-color:#14B2DE;
+  border-radius:10px 10px 10px 10px/10px 10px 10px 10px;
+  
+}
+
+.txtBox_holder{
+  margin-top:5px;
+}
+
+.txtBox{
+  width:350px;
+  height:40px;
+  font-family:"tahoma";
+  font-size:11pt;
+  background:linear-gradient(#DDDDDD,white);
+  border-radius:10px 10px 10px 10px/10px 10px 10px 10px;
+}
+
+.txtBox:focus{
+  border:2px solid #F5AE62;
+}
+
+
+#btn_holder{
+  margin-top:10px;
+}
+
+#btn_login{
+  width:200px;
+  height:35px;
+  font-family:"tahoma";
+  font-size:14pt;
+  border-radius:10px 10px 10px 10px/10px 10px 10px 10px;
+  background:linear-gradient(#248EA3,#AADAE3); 
+  font-weight:bold;
+  transition:0.5s;
+}
+
+#btn_login:hover{
+  cursor:pointer;
+  background:linear-gradient(#AADAE3,#248EA3); 
+  transition:0.5s;
+}
+
+.field{
+  margin-left:60px;
+
+}
+
+#terms{
+  margin-left:60px;
+  margin-top:30px;
+  margin-right:60px;
+  font-size:12pt;
+}
+
+
+

@@ -1,0 +1,65 @@
+<% provide(:title, "ثبت نام") %>
+<section id="my_section">
+	<div class="blank_space1">here is blank</div>
+		<div id="signup_holder">
+			<%= form_for(@user) do |f| %>
+			  <% if @user.errors.any? %>
+			    <div id="error_explanation">
+			      <h2><%= pluralize(@user.errors.count, "error") %> prohibited this user from being saved:</h2>
+
+			      <ul>
+			      <% @user.errors.full_messages.each do |message| %>
+				<li><%= message %></li>
+			      <% end %>
+			      </ul>
+			    </div>
+			  <% end %>
+			  <div class="signup_txtBox_holder">
+				  <div class="field">
+				    <%= f.email_field :username, placeholder:"نام کاربری: user@example.com", class: 'txtBox' %>
+				  </div>
+				  <div class="field">
+				    <%= f.password_field :password, placeholder:"کلمه عبور", class: 'txtBox' %>
+				  </div>
+				  <div class="field">
+				    <%= f.text_field :name, placeholder:"نام", class: 'txtBox' %>
+				  </div>
+				  <div class="field">
+				    <%= f.text_field :family, placeholder:"نام خانوادگی", class: 'txtBox' %>
+				  </div>
+				  <div id="terms">
+				    با ثبت نام موافقت خود را با <a href="#">قوانین سایت</a> اعلام می دارید.
+				  </div>
+
+			  </div>
+
+			  <div class="signup_txtBox_holder">
+				  <div class="field">
+				    <%= f.text_field :gender, placeholder:"جنسیت", class: 'txtBox' %>
+				  </div>
+				  <div class="field">
+				    <%= f.text_field :phone, placeholder:"شماره تماس: 09XXXXXXXXX", class: 'txtBox' %>
+				  </div>
+				  <div class="field">
+				    <%= f.text_field :insuranceNumber, placeholder:"شماره بیمه" , class: 'txtBox'%>
+				  </div>
+				  <div class="field">
+				    <%= f.text_field :bloodType, placeholder:"گروه خونی: A+", class: 'txtBox' %>
+				  </div>
+				  <div class="field">
+				    <%= f.text_field :records, placeholder:"سوابق بیماری", class: 'txtBox' %>
+				  </div>
+
+				  </div>
+
+				  <div class="actions">
+				    <%= f.submit "ثبت نام", class:"btn_signup" %>
+				  </div>
+			</div>
+			<% end %>
+		</div>
+	<div class="blank_space1">here is blank</div>
+
+</section>
+
+

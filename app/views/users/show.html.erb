@@ -1,0 +1,74 @@
+<% provide(:title, "حساب کاربری") %>
+<section id="show_section">
+
+	<div class="pic_holder">  <%=  image_tag("def_prof_pic.jpg", alt: "signup") %> </div>
+
+	<div id="info_part">
+
+		<div class="info_sub_part">
+
+			
+
+			
+
+			<div class="info">
+				<p>
+				  <strong>نام:</strong>
+				  <%= @user.name %>
+				</p>
+			</div>
+
+			<div class="info">
+				<p>
+				  <strong>نام خانوادگی:</strong>
+				  <%= @user.family %>
+				</p>
+			</div>
+
+			<div class="info">
+				<p>
+				  <strong>جنسیت:</strong>
+				  <%= @user.gender %>
+				</p>
+			</div>
+
+			<div class="info">
+				<p>
+				  <strong>شماره تماس:</strong>
+				  <%= @user.phone %>
+				</p>
+			</div>
+
+		</div>
+
+		<div class="info_sub_part">
+
+			
+
+			<div class="info">
+				<p>
+				  <strong>شماره بیمه:</strong>
+				  <%= @user.insuranceNumber %>
+				</p>
+			</div>
+
+			<div class="info">
+				<p>
+				  <strong>گروه خونی:</strong>
+				  <%= @user.bloodType %>
+				</p>
+			</div>
+
+			<div class="info">
+				<p>
+				  <strong>سوابق بیماری:</strong>
+				  <%= @user.records %>
+				</p>
+			</div>
+		</div>
+	</div>
+
+</section
+
+
+
