@@ -1,37 +1,47 @@
-<p id="notice"><%= notice %></p>
+<% provide(:title, "رزروهای من") %>
 
-<h1>لیست وقت های دکتر</h1>
+<h1 id="top_title">لیست رزروهای من</h1>
 
-<table>
-  <thead>
-    <tr>
-	<th>نام دکتر</th>
-	<th>نام خانوادگی دکتر</th>
-	<th>تخصص</th>
-      <th>تاریخ ملاقات دکتر</th>
+<section id="my_section">
+	
+	<div id="r"
+		<p id="notice"><%= notice %></p>
 
-  
-      <th>نفر</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
+	
 
-  <tbody>
-    <% @user_reserves.each do |user_reserf| %>
-      <tr>
-<td><%= user_reserf.name %></td>
-<td><%= user_reserf.family %></td>
-	<td><%= user_reserf.speciality %></td>
-        <td><%= user_reserf.date.to_pdate %></td>
+		<table>
+		  <thead>
+		    <tr>
+			<th>نام دکتر</th>
+			<th>نام خانوادگی دکتر</th>
+			<th>تخصص</th>
+		      <th>تاریخ ملاقات دکتر</th>
 
- 
-        <td><%= user_reserf.turn %></td>
+		  
+		      <th>نفر</th>
+		      <th colspan="3"></th>
+		    </tr>
+		  </thead>
 
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+		  <tbody>
+		    <% @user_reserves.each do |user_reserf| %>
+		      <tr>
+		<td><%= user_reserf.name %></td>
+		<td><%= user_reserf.family %></td>
+			<td><%= user_reserf.speciality %></td>
+			<td><%= user_reserf.date %></td>
 
-<br>
+		 
+			<td><%= user_reserf.turn %></td>
 
+		      </tr>
+		    <% end %>
+		  </tbody>
+		</table>
+
+		<br>
+
+	</div>
+
+</section>
 

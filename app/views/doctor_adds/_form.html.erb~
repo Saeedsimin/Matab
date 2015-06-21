@@ -10,7 +10,7 @@
       </ul>
     </div>
   <% end %>
-
+hi this is a test
   <div class="field">
     <%= f.label :from %><br>
     <%= f.datetime_select :from %>
@@ -40,7 +40,7 @@
     <%= f.text_field :speciality %>
   </div>
 <div class="field">
-    <%= f.label :speciality %><br>
+    <%= f.label :doctor_id %><br>
     <%= f.text_field :doctor_id %>
   </div>
   <div class="actions">

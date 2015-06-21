@@ -1,32 +1,40 @@
+<section id="my_section">
+	<div class="blank_space1">here is blank</div>
+	<div id="signup_holder">
+	
+	<table>
+	  <thead>
+	    <tr>
+	      <th>از تاریخ</th>
+	      <th>تا تاریخ</th>
+	      <th>ظرفیت</th>
+	      <th>رزرو شده </th>
+	      <th>نام دکتر</th>
+	      <th>نام خانوادگی دکتر</th>
+	      <th>تخصص</th>
+	      <th colspan="3"></th>
+	    </tr>
+	  </thead>
 
-<table>
-  <thead>
-    <tr>
-      <th>از تاریخ</th>
-      <th>تا تاریخ</th>
-      <th>ظرفیت</th>
-      <th>رزرو شده </th>
-      <th>نام دکتر</th>
-      <th>نام خانوادگی دکتر</th>
-      <th>تخصص</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
+	  <tbody>
+	    <% @doctor_adds.each do |doctor_add| %>
+	      <tr>
+		<td><%= doctor_add.from  %></td>
+		<td><%= doctor_add.to %></td>
+		<td><%= doctor_add.total %></td>
+		<td><%= doctor_add.used %></td>
+		<td><%= doctor_add.docName %></td>
+		<td><%= doctor_add.docFamily %></td>
+		<td><%= doctor_add.speciality %></td>
 
-  <tbody>
-    <% @doctor_adds.each do |doctor_add| %>
-      <tr>
-        <td><%= doctor_add.from %></td>
-        <td><%= doctor_add.to %></td>
-        <td><%= doctor_add.total %></td>
-        <td><%= doctor_add.used %></td>
-        <td><%= doctor_add.docName %></td>
-        <td><%= doctor_add.docFamily %></td>
-        <td><%= doctor_add.speciality %></td>
+	     <td><%= link_to "رزرو", {:controller => "user_reserves", :action => "create_reserve", :id => doctor_add.id } ,data: { confirm: 'آیا با عملیات رزور موافق هستید ؟' }, class:"reserve"%></td>
+	       
+	      </tr>
+	    <% end %>
+	  </tbody>
+	</table>
 
-     <td><%= link_to "رزرو", {:controller => "user_reserves", :action => "create_reserve", :id => doctor_add.id } ,data: { confirm: 'آیا با عملیات رزور موافق هستید ؟' }%></td>
-       
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+	</div>
+	<div class="blank_space1">here is blank</div>
+</section>
+

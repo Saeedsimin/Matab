@@ -7,11 +7,11 @@
 		<div class="nothing">sd</div>
 
 		<div id="flow">
-			<div class="flow_icon_holder"> <%=  image_tag("signup.png", alt: "ثبت نام", class:"folow_icon") %>   </div>
+			<div class="flow_icon_holder">  <%=  image_tag("appointment.png", alt: "ملاقات", class:"folow_icon") %>  </div>
 			<div class="arrow_icon_holder"> <%=  image_tag("arrow.png", alt: "جهت", class:"arrow_icon") %>  </div>
 			<div class="flow_icon_holder">  <%=  image_tag("doctor.png", alt: "دکتر", class:"folow_icon") %> </div>
 			<div class="arrow_icon_holder">  <%=  image_tag("arrow.png", alt: "جهت", class:"arrow_icon") %> </div>
-			<div class="flow_icon_holder"> <%=  image_tag("appointment.png", alt: "ملاقات", class:"folow_icon") %> </div>
+			<div class="flow_icon_holder"> <%=  image_tag("signup.png", alt: "ثبت نام", class:"folow_icon") %> </div>
 		</div>
 
 		<div class="nothing">sd</div>

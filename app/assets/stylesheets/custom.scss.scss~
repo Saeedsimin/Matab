@@ -1,3 +1,9 @@
+body{
+  body:100%;
+  height:100%;
+  padding:0;
+  direction:rtl;
+}
 
 #wrap{
   margin:auto;
@@ -8,21 +14,21 @@ header{
   width:100%;
   height:190px;
   background-color:#3A9E97;
-  float:left;
+  float:right;
   margin-bottom:20px;
   font-family:"tahoma";
   border-radius:10px 10px 10px 10px/10px 10px 10px 10px;
 }
 
 #logo{
-  float:left;
+  float:right;
   background-color:white;
   height:150px;
   width:10.5%;
   border:5px solid #AAAAAA;
   border-radius:5px 5px 5px 5px/5px 5px 5px 5px;
   margin-top:15px;
-  margin-left:10px;
+  margin-right:10px;
 }
 
 .logo_icon{
@@ -38,36 +44,36 @@ header{
 }
 
 #blank{
-  float:left;
-  width:54.3%;
+  float:right;
+  width:51.3%;
   text-align:center;
-  font-size:40px;
+  font-size:30pt;
   font-weight:bold;
   margin-top:75px;
-  color:white;
+  color:#3A9E97;
 }
 
-
 nav{
-  float:left;
+  float:right;
   text-decoration:none;
   color:white;
-  margin-left: 50px;
+  margin-right: 50px;
   margin-top:10px;
+  
 
   
 }
 
 
 #btn_login_form{
-  float:left;
-  margin-left:3px;
+  float:right;
+  margin-right:325px;
   
 }
 
 #btn_home_form{
-  float:left;
-  margin-left:280px;
+  float:right;
+  margin-right:3px;
   
 }
 
@@ -81,6 +87,7 @@ nav{
   transition:0.5s;
   font-family:"tahoma";
   padding:10px;
+  font-size:12pt;
 }
 
 .btn_nav:hover{
@@ -117,6 +124,9 @@ nav{
   color:#364E61;
 }
 
+
+
+
 li{
   display:inline;
   position:relative;
@@ -144,12 +154,122 @@ li:hover{
   transition:0.5s;
 }
 
-.gravatar {
-  float: left;
-  margin-right: 10px;
+section{
+  width:100%;
+  height:auto;
+  background-color:#F0F8FA;
+  float:right;
+  border-radius:10px 10px 10px 10px/10px 10px 10px 10px;
+  margin-bottom:20px;
+  padding-bottom:30px;
+  
 }
 
-.gravatar_edit {
-  margin-top: 15px;
+#welcome{
+  float:right;
+  width:100%;
+  text-align:center;
+  font-size:25pt;
+  font-weight:bold;
+  margin-top:30px;
+  color:black;
+  font-family:"tahoma";
+ 
 }
 
+#m_holder{
+  width:100%;
+  float:right;
+}
+
+#flow{
+  float:right;
+  width:80%;
+  margin-top:60px;
+}
+
+.nothing{
+  color:#F0F8FA;
+  width:10%;
+  float:right;
+}
+
+.flow_icon_holder{
+  float:right;
+  width:30%;
+}
+
+.arrow_icon_holder{
+  float:right;
+  width:10%;
+}
+
+
+
+.flow_icon{
+  width:200px;
+  height:100px;
+  border:5px solid #888888;
+  border-radius:10px 10px 10px 10px/10px 10px 10px 10px;
+  
+  float:right;
+}
+
+.arrow_icon{
+  width:64px;
+  height:64px;
+  float:right;
+  
+  margin-top:20px;
+}
+
+
+#field_signup{
+  width: 100%;
+  height:auto;
+  margin-top:100px;
+  text-align:center;
+  float: right;
+}
+
+#btn_signup{
+  padding-bottom:10px;
+  padding-top:10px;
+  width:250px;
+  border:1px solid #555555;;
+  border-radius:10px 10px 10px 10px/10px 10px 10px 10px;
+  background:linear-gradient(#29a2ba,#AADAE3); 
+  transition:0.5s;
+  color:white;
+  font-family:"tahoma";
+  font-size:18pt;
+  font-weight:bold;
+
+}
+
+#btn_signup:hover{
+  cursor:pointer;
+  background:linear-gradient(#AADAE3,#29a2ba); 
+  transition:0.5s;
+}
+
+footer{
+  position:relative;
+  clear:both;
+  float:right;
+  width:100%;
+  text-align:center;
+  background-color:#555555;
+  color:white;
+  transition:0.5s;
+  border-top:1px solid black;
+  padding-top:10px;
+  padding-bottom:10px;
+  border-radius:10px 10px 10px 10px/10px 10px 10px 10px;
+}
+
+footer:hover{
+  background-color:#999999;
+  color:black;
+  transition:0.5s;
+}

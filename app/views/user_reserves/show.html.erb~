@@ -1,6 +1,6 @@
 <p id="notice"><%= notice %></p>
 <%= debug @user_reserf %>
-<%= debug @@user_test %>
+<%= debug @user_test %>
 
-
+hisadsadas
 <%= link_to "لیست رزرو ها", {:controller => "user_reserves", :action => "index_temp"} %>

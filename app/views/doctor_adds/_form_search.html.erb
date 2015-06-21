@@ -1,41 +1,50 @@
-<%= form_for(@doctor_add, url: 'result_path') do |f| %>
-  <% if @doctor_add.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@doctor_add.errors.count, "error") %> prohibited this user from being saved:</h2>
+<% provide(:title, "جستجوی دکتر") %>
 
-      <ul>
-      <% @doctor_add.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
-      <% end %>
-      </ul>
-    </div>
-  <% end %>
-<div class="field">
-    <%= f.label :'نام دکتر' %><br>
-    <%= f.text_field :docName %>
-  </div>
-<div class="field">
-    <%= f.label :'نام خانوادگی دکتر' %><br>
-    <%= f.text_field :docFamily %>
-  </div>
-<div class="field">
-    <%= f.label :'تخصص' %><br>
-    <%= f.text_field :speciality %>
-  </div>
+<section id="my_section">
 
+	<div class="blank_space1">here is blank</div>
 
+	<div id="signup_holder">
+		<%= form_for(@doctor_add, url: 'result_path') do |f| %>
+		  <% if @doctor_add.errors.any? %>
+		    <div id="error_explanation">
+		      <h2><%= pluralize(@doctor_add.errors.count, "error") %> prohibited this user from being saved:</h2>
 
-<div class="field">
-    <%= f.label :':از تاریخ' %><br>
-    <%= f.datetime_select :from %>
-  </div>
-<div class="field">
-    <%= f.label :':تا تاریخ' %><br>
-    <%= f.datetime_select:to %>
-  </div>
+		      <ul>
+		      <% @doctor_add.errors.full_messages.each do |message| %>
+			<li><%= message %></li>
+		      <% end %>
+		      </ul>
+		    </div>
+		  <% end %>
+		<div class="field">
+		    <%= f.text_field :docName, placeholder: "نام دکتر", class: 'txtBox' %>
+		  </div>
+		<div class="field">
+		    <%= f.text_field :docFamily, placeholder:"نام خانوادگی دکتر", class: 'txtBox' %>
+		  </div>
+		<div class="field">
+		    <%= f.text_field :speciality, placeholder:"تخصص", class: 'txtBox' %>
+		  </div>
 
 
-  <div class="actions">
-    <%= f.submit :'جستجو' %>
-  </div>
-<% end %>
+
+		<div class="field">
+		    <%= f.label :'از تاریخ', class:"date" %><br>
+		    <%= f.datetime_select :from %>
+		  </div>
+		<div class="field">
+		    <%= f.label :'تا تاریخ', class:"date" %><br>
+		    <%= f.datetime_select:to %>
+		  </div>
+
+
+		  <div class="actions">
+		    <%= f.submit :'جستجو', class:"btn_signup" %>
+		  </div>
+		<% end %>
+	</div>
+	<div class="blank_space1">here is blank</div>
+
+</section>
+

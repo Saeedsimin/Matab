@@ -61,11 +61,6 @@ tbody{
   color:#364E61;
 }
 
-.txt{
-  font-size:13pt;
-
-}
-
 /*
 li{
   display:inline;
